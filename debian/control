@@ -10,7 +10,7 @@ Homepage: <insert the upstream URL, if relevant>
 
 Package: graphite-web
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, python-django, python-cairo, python-simplejson, libapache2-mod-wsgi, python-twisted, python-whisper
-Recommends: python-memcache, memcached
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-django, python-django-tagging, python-cairo, python-simplejson, libapache2-mod-wsgi, python-twisted, python-whisper
+Suggests: python-memcache, memcached
 Description: rrd-like database and dashboard
  Graphite consists of two major components the frontend Django webapp that runs under mod_python Apache the backend carbon-cache.py daemon

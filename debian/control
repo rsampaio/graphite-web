@@ -1,0 +1,16 @@
+Source: graphite-web
+Section: python
+Priority: extra
+Maintainer: root <root@squeezo>
+Build-Depends: debhelper
+Standards-Version: 3.8.4
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: git://git.debian.org/collab-maint/graphite-web.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/graphite-web.git;a=summary
+
+Package: graphite-web
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-django, python-cairo, python-simplejson, libapache2-mod-wsgi, python-twisted
+Recommends: python-memcache, memcached
+Description: rrd-like database and dashboard
+ Graphite consists of two major components the frontend Django webapp that runs under mod_python Apache the backend carbon-cache.py daemon
